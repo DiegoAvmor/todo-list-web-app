@@ -45,7 +45,7 @@ body{
 }
 
 .circles li{
-    position: relative;
+    position: absolute;
     display: block;
     list-style: none;
     width: 20px;
