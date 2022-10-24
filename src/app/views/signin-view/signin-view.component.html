@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="m-5 p-5">
+    <form [formGroup]="signInForm" class="align-items-center">
+      <div class="form-group pb-3">
+        <label for="emailInput">Email address</label>
+        <input formControlName="email" name="email" type="email" class="form-control" placeholder="Enter your email">
+        <div class="error-validation" *ngIf="this.controls['email'].invalid && this.controls['email'].touched">
+          <span *ngIf="this.controls['email'].hasError('required')">You must enter an email</span>
+          <span *ngIf="this.controls['email'].hasError('email')">You must enter a valid email</span>
+        </div>
+      </div>
+      <div class="form-group pb-3">
+        <label for="password">Password</label>
+        <input formControlName="password" name="password" type="password" class="form-control"  placeholder="Write your password">
+        <div class="error-validation" *ngIf="this.controls['password'].invalid && this.controls['password'].touched">
+          <span *ngIf="this.controls['password'].hasError('required')">Your password must not be empty</span>
+        </div>
+      </div>
+
+      <button [disabled]="!this.signInForm.valid" type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+</div>

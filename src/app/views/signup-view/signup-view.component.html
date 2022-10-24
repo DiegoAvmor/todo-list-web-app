@@ -13,6 +13,7 @@
         <input formControlName="email" name="email" type="email" class="form-control" placeholder="Enter your email">
         <div class="error-validation" *ngIf="this.controls['email'].invalid && this.controls['email'].touched">
           <span *ngIf="this.controls['email'].hasError('required')">You must enter an email</span>
+          <span *ngIf="this.controls['email'].hasError('email')">You must enter a valid email</span>
         </div>
       </div>
       <div class="form-group pb-3">

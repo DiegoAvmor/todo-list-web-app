@@ -10,12 +10,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { SignupViewComponent } from './views/signup-view/signup-view.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SigninViewComponent } from './views/signin-view/signin-view.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeViewComponent,
     SignupViewComponent,
+    SigninViewComponent,
   ],
   imports: [
     BrowserModule,
