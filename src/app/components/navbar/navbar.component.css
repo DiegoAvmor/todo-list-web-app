@@ -1,0 +1,13 @@
+.navbar{
+  background-color: blueviolet;
+}
+
+.navbar > a, .link{
+  color: white;
+}
+
+.link {
+  padding-right: 2em;
+  text-decoration: none;
+  font-size: medium;
+}
